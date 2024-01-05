@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tahun Kabisat</title>
+</head>
+<body>
+    <script>
+        // Tahun Kabisat
+    for (let tahunAwal = 1600; tahunAwal <= 2024; tahunAwal++){
+        
+        if(tahunAwal%400 == 0){
+            console.log(`Tahun ${tahunAwal} Merupakan Tahun Kabisat`)
+        }
+        else if(tahunAwal%400 == 0 || tahunAwal%100 != 0 && tahunAwal%4 == 0){
+            console.log(`Tahun ${tahunAwal} Merupakan Tahun Kabisat`)
+        }
+        else if (tahunAwal%400 != 0 && tahunAwal%100 == 0){
+            console.log(`Tahun ${tahunAwal} Bukan Merupakan Tahun Kabisat`)
+        }
+        else {
+            console.log(`Tahun ${tahunAwal} Bukan Merupakan Tahun Kabisat`)
+        }
+    }
+    </script>
+</body>
+</html>
